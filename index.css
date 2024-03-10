@@ -1,0 +1,93 @@
+:root{
+    --Green:  hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --off-black:  hsl(0, 0%, 8%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey:  hsl(0, 0%, 12%);
+}
+body{
+    background:  var(--off-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: var(--White);
+}
+.profile_box{
+    background: var(--Dark-Grey);
+    margin-top: 5em;
+    border-radius: 7px;
+    
+}
+.profile_img{
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    margin-top: 2.5em;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -2px;
+}
+
+h1{
+  font-size: 1.3em;
+  margin-top: 1em;
+}
+span{
+    color: var(--Green);
+    font-size: 12px;
+    font-weight: 600;
+}
+p {
+    font-size: 13px;
+    margin-top: 2.4em;
+
+}
+.social_medias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social_medias a{
+    text-decoration: none;
+    color: var(--White);
+}
+.link{
+    background:var(--Grey) ;
+    width: 17em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 2.5em;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link:hover{
+    background-color: var(--Green);
+    color: black;
+    transition: ease-in-out 0.1s;
+}
+.attribution{
+    margin-top: 1.4em;
+    color: var(--Grey);
+}
+.attribution a{
+  color: var(--Grey);
+  text-decoration: underline;
+}
+@media only screen and (min-width: 375px) {
+    .profile_box{
+    
+        width: 20em;
+        
+    }
+}
